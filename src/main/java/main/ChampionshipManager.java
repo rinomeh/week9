@@ -37,6 +37,7 @@ public class ChampionshipManager {
         return totalRaces;
     }
 
+    //not included int the UML but needed to loop through races
     public List<RallyRaceResult> getRaceResults() {
         return races;
     }
@@ -73,6 +74,7 @@ public class ChampionshipManager {
         return leadingDriver;
     }
 
+    //get total championship points
     public static int getTotalChampionshipPoints() {
         int totalPoints = 0;
         for (Driver driver : getInstance().drivers) {

@@ -4,8 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//class to calculate championship statistics
 public class ChampionshipStatistics {
     
+    //method to calculate the average points per driver
     public double calculateAveragePointsPerDriver(List<Driver> drivers) {
         int totalPoints = 0;
         for (Driver driver : drivers) {
@@ -14,6 +16,7 @@ public class ChampionshipStatistics {
         return totalPoints / drivers.size();
     }
 
+    //method to find the most successful country
     public static String findMostSuccessfulCountry(List<Driver> drivers){
         Map<String, Integer> countryPoints = new HashMap<>();
         for (Driver driver : drivers) {
@@ -34,6 +37,7 @@ public class ChampionshipStatistics {
         return mostSuccessfulCountry;
     }
 
+    //method to get the total drivers
     public static int getTotalRacesHeld(){
         return ChampionshipManager.getTotalRaces();
     }

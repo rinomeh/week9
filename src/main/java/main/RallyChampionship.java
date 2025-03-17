@@ -90,6 +90,7 @@ public class RallyChampionship
 
         
         //print car performance
+        //AI used to figure out the numbers needed for car performace as the UML wasnt clear in this point
         System.out.println("\n===== CAR PERFORMANCE =====");
         double gravelCarPerformance = 0.0;
         double asphaltCarPerformance = 0.0;
