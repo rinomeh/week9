@@ -62,6 +62,7 @@ public class ChampionshipManager {
 
     }
 
+    //get leading driver
     public static Driver getLeadingDriver(){
         Driver leadingDriver = getInstance().drivers.get(0);
         for (Driver driver : getInstance().drivers) {
